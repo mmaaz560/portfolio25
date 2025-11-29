@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color :#00F5BC
+}
+.icons{
+    color:  #97d3c6;
+    gap: 3rem;
+    z-index: 1;
+
+}
+.qw{
+    position:absolute;
+    animation: spin 1s linear infinite  alternate;
+    
+}
+@keyframes spin{
+    from{
+     transform: rotate(0);
+     opacity: 0;
+    }
+    to{
+      transform: rotate(160deg);
+    }
+}
+.c2{
+    right: 10%;
+    top: 100px;   
+}
+.c3{
+    right: 45%;
+    top:65% ;
+}
+.c1{
+   
+    right:10% ;
+    top:90% ;
+}
+.j1{
+    right: 65%;
+    top: 45%;
+}
+.w1{
+    left: 20%;
+    top: 9%;
+}
+.t1{
+   left: 80%;
+   top: 30%;
+}
+.i2{
+     left: 63%;
+     top: 7%;
+}
+.i3{
+    top: 80%;
+    left: 10%;
+}
+.w2{
+    right: 42%;
+    top: 77%;
+}
+.t3{
+    left: 7%;
+    top: 8%;
+}
+.w3{
+    left: 10%;
+    top: 43% ;
+}
+.t2{
+   right: 10%;
+   top: 60%;
+}
+.i1{
+     left: 30%;
+     top: 68%;
+}
+.j2{
+    right:23% ;
+    top:50% ;
+}
+.j3{
+    right:70% ;
+    top: 92%;
+}
+.g1{
+    right: 60%;
+    top:15% ;
+}
+.g2{
+    right:95% ;
+    top:58% ;
+}
+.g3{
+    right:10% ;
+    top:40% ;
+}
+.l1{
+    right:81% ;
+    top:29% ;
+}
+.l2{
+    right: 15%;
+    top:75% ;
+}
+.l3{
+    right:34% ;
+    top: 94%;
+}
+.f1{
+    right:28% ;
+    top:15% ;
+}
+.f2{
+    right: 50%;
+    top:50% ;
+}
+.f3{
+    right: 90%;
+    top: 28%;
+}
+
+body{
+    background-color: #080808;
+    position: relative;
+}
+/* navbar section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  font-family: Black Ops One, sans-serif; 
+    color: white;
+}
+.main,.end{
+    color: var(--main-color);
+    font-family: Black Ops One, sans-serif;
+}
+
+.list{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+.icon{
+
+   display: none;
+   color: var(--main-color);
+
+}
+
+@media (max-width:440px){
+.list{
+    display:none;
+}
+.icon{
+    display: block;
+}
+}
+/* hero section */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 1rem;
+    padding: 1rem;
+    /* font-size: rem; */
+    
+
+}
+.par{
+    width: 50%;
+    padding-top: 8px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Black Ops One, sans-serif;
+}
+.first{
+    font-size: 2rem;
+    color: var(--main-color);
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+.header{
+    font-size: 3rem;
+    color: white;
+    font-family: Black Ops One, sans-serif;
+}
+.web{
+    font-size: 2rem;
+    color: var(--main-color);
+    font-family: Black Ops One, sans-serif;
+}
+.socialicon{
+    padding-top: 1rem;
+    font-size: 2rem;
+    gap: 2rem;
+    color:var(--main-color);
+}
+@media (max-width:810px)
+{
+    .header{
+    font-size: 2rem;
+    }
+    .first{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:550px)
+{
+    .header{
+    font-size: 1.4rem;
+    }
+    .first{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:390px)
+{
+    .header{
+    font-size: 1rem;
+    }
+    .first{
+        font-size: 1rem;
+    }
+    .socialicon{
+        font-size: 1.3rem;
+    }
+    .par{
+        font-size: 1rem;
+    }
+}
+/* third section */
+.lin{
+    width: 15%;
+    height: 3px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.about{
+    color: white;
+}
+.third{
+    display: flex;
+    justify-content:end ;
+    gap: 10px;
+    align-items: end;
+    padding:4rem 2rem 0 0;
+
+}
+.third2{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: 80%;
+    margin: auto;
+  
+}
+.pictur{
+    width: 30%;
+    padding-left: 4rem;
+    padding-top: 3rem;
+      position: relative;
+       
+}
+.bob{
+    position: absolute;
+    background-color:#2e4641;
+    border:  1px solid #00F5BC;
+    width:  83%;
+    height: 86%;
+    z-index: -1;
+    border-radius: 15% 55% 62% 28% / 64% 33% 67% 36%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-38%,-42%);
+    animation: move 3s linear infinite ;
+}
+@keyframes move{
+    from{
+      transform: translate(-38%,-42%) rotate(0); 
+    }
+    to{
+        transform: translate(-38%,-42%) rotate(360deg);
+    }
+}
+.pictur img{
+border-radius: 15% 55% 62% 28% / 64% 33% 67% 36%;
+}
+.aboutme{
+    color: white;
+    width: 70%;
+    font-size: 1.4rem;
+}
+@media (max-width:570px){
+    /* .aboutme{
+        font-size: 1.4rem;
+    } */
+}
+@media (max-width:370px){
+    .aboutme{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:580px){
+    .third2{
+    display: flex;
+    flex-direction: column;
+    /* font-size: 1rem; */
+    }    
+
+}
+/* fourth section */
+.fourth{
+    margin-top: 3rem;
+   position: relative;  
+}
+.he4{
+    color: white;
+    padding: 3rem;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: end;
+    gap: 0.7rem;
+   
+
+}
+.dash{
+    width: 15%;
+    height: 3px;
+    background-color: gray;
+    border-radius: 10px;
+    
+}
+.fourth2{
+     width: 85%;
+     display: flex;
+     gap: 0.5rem;
+     margin: auto ;
+     flex-wrap: wrap;
+     padding: 1rem;
+}
+.box{
+    width: 25%;
+    height: 30px;
+    background-color: rgba(49, 49, 49, .5);
+    border-radius: 10px;
+    margin:1rem auto 0;
+    
+    
+}
+.box1{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 1.3rem ;
+    gap: 0.8rem;
+}
+.box2{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 1.3rem ;
+    gap: 0.8rem;
+}
+.box3{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 1.3rem ;
+    gap: 0.8rem;
+}
+.box4{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 1.3rem ;
+    gap: 0.8rem;
+}
+.box5{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 1.3rem ;
+    gap: 0.8rem;
+}
+.box6{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 1.3rem ;
+    gap: 0.8rem;
+}
+
+@media (max-width:670px){
+    .he4{
+        font-size: 1rem;
+    }
+}
+@media (max-width:550px){
+    .box{
+        width: 100%;
+    }
+}
+@media (max-width:470px){
+    .fourth2{
+        
+        gap: 2rem;
+        margin: auto;
+    }
+}
